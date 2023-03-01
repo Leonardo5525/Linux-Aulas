@@ -3,6 +3,8 @@ peso = float(input('Qual é o seu peso? '))
 altura = float(input('Qual a sua altura? '))
 
 imc = peso / (altura**2)
+print(f'{imc:.2f}')
+print(f'Uma pessoa de genêro {sexo}, {peso} kilos e {altura} metros')
 
 if sexo == 'F' and imc >= 18.5 and imc <= 24.9:
     print('Peso considerado ideal')
@@ -25,5 +27,5 @@ elif sexo == 'M' and imc >= 27.9 and imc <= 31.1:
 elif sexo == 'M' and imc >= 31.2:
     print('Obesidade')
 
-print(f'{imc:.2f}')
+
 
